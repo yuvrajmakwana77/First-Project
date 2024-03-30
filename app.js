@@ -1,0 +1,11 @@
+// //programming knowledge Youtube channel
+// const {obj ,fucn} = require(`./utils.js`)
+// console.log("Yuvraj");
+// console.log(fucn(3,4));
+// console.log(__dirname,__filename);
+// console.log(obj);
+
+const fs = require('fs');
+fs.writeFileSync('app.txt','hi how are you right now?');
+console.log(fs.readFileSync('app.txt').toString());
+fs.appendFileSync('app.txt',"Yuvraj");
